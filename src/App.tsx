@@ -1,16 +1,17 @@
 import React from 'react';
-import Homer from "./components/Homer";
-import Lisa from "./components/Lisa";
-import Bart from "./components/Bart";
-import Marge from "./components/Marge";
+import {simpsons} from "./data/data";
+import Simpsons from "./component/Simpsons";
+import {ISimpsonsModel} from "./model/ISimpsonsModel";
 
-function App() {
+
+
+function App  () {
   return (
     <div>
-      <Homer/>
-      <Lisa/>
-      <Bart/>
-      <Marge/>
+        {
+            simpsons.map((character: ISimpsonsModel) => <Simpsons character={character}/>)
+        }
+
     </div>
   );
 }
