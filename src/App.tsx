@@ -1,6 +1,4 @@
 import React from 'react';
-
-import './App.css';
 import Homer from "./components/Homer";
 import Lisa from "./components/Lisa";
 import Bart from "./components/Bart";
