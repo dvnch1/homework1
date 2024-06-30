@@ -1,17 +1,13 @@
 import React from 'react';
-import {simpsons} from "./data/data";
-import Simpsons from "./component/Simpsons";
-import {ISimpsonsModel} from "./model/ISimpsonsModel";
+import UsersComponent from "./component/users-component/UsersComponent";
+
 
 
 
 function App  () {
   return (
     <div>
-        {
-            simpsons.map((character: ISimpsonsModel) => <Simpsons character={character}/>)
-        }
-
+    <UsersComponent/>
     </div>
   );
 }
